@@ -4,13 +4,8 @@
     import Footer from "$lib/Footer.svelte";
 </script>
 
-<svelte:head>
-    <title>Everbuild.org</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-</svelte:head>
-
 <Navbar/>
-<div class="min-h-screen">
+<div class="min-h-screen pt-20">
     <slot></slot>
 </div>
 
