@@ -1,13 +1,18 @@
 <script>
+import {t} from "$lib/i18n";
 </script>
 
 <svelte:head>
-    <title>Everbuild | Homepage</title>
+    <title>{$t("head.title.main")}</title>
     <meta name="description" content="Everbuild | Homepage">
 </svelte:head>
 
 <div>
-    <h1>Welcome to SvelteKit</h1>
-    <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+    <div class="absolute w-screen h-screen">
+
+    </div>
+    <div class="absolute w-screen h-screen">
+
+    </div>
 </div>
 
