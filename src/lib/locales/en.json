@@ -1,4 +1,20 @@
 {
-  "head.title.main": "Everbuild | Homepage"
-
+  "head.title.main": "Everbuild | Homepage",
+  "head.title.imprint": "Everbuild | Imprint",
+  "head.title.privacy": "Everbuild | Privacy",
+  "head.title.terms": "Everbuild | Terms",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "footer": {
+    "imprint": "Imprint",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "legal": "Legal",
+    "socialmedia": "Social Media",
+    "footerText": "All rights reserved."
+  }
 }

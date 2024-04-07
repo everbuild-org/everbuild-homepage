@@ -1,6 +1,12 @@
 <script>
 import {locale} from "svelte-i18n";
+import {t} from "$lib/i18n";
 </script>
+
+<svelte:head>
+    <title>{$t("head.title.privacy")}</title>
+    <meta name="description" content="Everbuild | Homepage">
+</svelte:head>
 
 <div class="pt-12">
     <div class="max-w-[1200px] m-auto p-3 prose pt-6">

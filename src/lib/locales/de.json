@@ -1,3 +1,20 @@
 {
-  "head.title.main": "Everbuild | Startseite"
+  "head.title.main": "Everbuild | Startseite",
+  "head.title.imprint": "Everbuild | Impressum",
+  "head.title.privacy": "Everbuild | Datenschutz",
+  "head.title.terms": "Everbuild | Nutzungsbedingungen",
+  "nav": {
+    "home": "Startseite",
+    "about": "Über uns",
+    "products": "Produkte",
+    "contact": "Kontakt"
+  },
+  "footer": {
+    "legal": "Rechtliches",
+    "imprint": "Impressum",
+    "privacy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "socialmedia": "Soziale Medien",
+    "footerText": "Alle Rechte vorbehalten."
+  }
 }

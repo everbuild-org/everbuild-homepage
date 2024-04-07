@@ -5,6 +5,7 @@
     import InstagramLogo from 'phosphor-svelte/lib/InstagramLogo';
     import TiktokLogo from 'phosphor-svelte/lib/TiktokLogo';
     import Headset from 'phosphor-svelte/lib/Headset';
+    import {t} from "svelte-i18n";
 
     const socials = [
         {
@@ -45,15 +46,17 @@
 <footer class="flex min-h-[33vh] w-full flex-col justify-between bg-stone-950 p-4" class:mt-6={showMargin}>
     <div class="flex w-full flex-col justify-between lg:flex-row">
         <div class="prose flex flex-grow flex-col" style="order: 1;">
-            <h3>Legal</h3>
+            <h3>{$t("footer.legal")}</h3>
             <div class="flex gap-2">
-                <a href="/imprint">Imprint</a>
+                <a href="/imprint">{$t("footer.imprint")}</a>
                 <span>&bull;</span>
-                <a href="/privacy">Privacy</a>
+                <a href="/privacy">{$t("footer.privacy")}</a>
+                <span>&bull;</span>
+                <a href="/terms">{$t("footer.terms")}</a>
             </div>
         </div>
         <div class="prose flex flex-grow flex-col text-right" style="order: 2;">
-            <h3>Social Media</h3>
+            <h3>{$t("footer.socialmedia")}</h3>
             <div class="flex flex-row justify-end items-center">
                 {#each socials as social}
                     <a href={social.url} target="_blank" rel="noopener noreferrer"
@@ -65,6 +68,6 @@
         </div>
     </div>
     <div class="text-center ">
-        &copy; 2023 - {new Date().getFullYear()} Everbuild.org. All rights reserved.
+        &copy; 2023 - {new Date().getFullYear()} Everbuild.org. {$t("footer.footerText")}
     </div>
 </footer>
