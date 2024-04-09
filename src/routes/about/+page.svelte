@@ -4,6 +4,9 @@
     import sommer from "/src/assets/Sommer.jpg";
     import herbst from "/src/assets/Herbst.jpg";
     import winter from "/src/assets/Winter.jpg";
+    import asorda from "/src/assets/asorda.png";
+    import noted from "/src/assets/noted.png";
+    import undraw from "/src/assets/undraw_engineering_team_a7n2.svg";
     import User from "phosphor-svelte/lib/UserFocus";
     import Flag from "phosphor-svelte/lib/Flag";
     import CompassTool from "phosphor-svelte/lib/CompassTool";
@@ -37,7 +40,7 @@
     </div>
     <div class="flex justify-center mt-16 gap-6">
         <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img class="h-64 object-cover" src="/src/assets/noted.png" height="598" width="796" alt="Noted!"/>
+            <figure><img class="h-64 object-cover" src={noted} height="598" width="796" alt="Noted!"/>
             </figure>
             <div class="card-body">
                 <h2 class="card-title">
@@ -52,7 +55,7 @@
             </div>
         </div>
         <div class="card w-96 bg-base-100 shadow-xl">
-            <figure><img class="h-64 object-cover" src="/src/assets/asorda.png" height="951" width="1900" alt="Asorda"/>
+            <figure><img class="h-64 object-cover" src={asorda} height="951" width="1900" alt="Asorda"/>
             </figure>
             <div class="card-body">
                 <h2 class="card-title">
@@ -112,5 +115,5 @@
             </div>
         </div>
     </div>
-    <img src="/src/assets/undraw_engineering_team_a7n2.svg" alt="Engineering Team" class="w-full h-auto object-cover max-w-[600px] mx-auto mb-10"/>
+    <img src={undraw} alt="Engineering Team" class="w-full h-auto object-cover max-w-[600px] mx-auto mb-10"/>
 </div>
