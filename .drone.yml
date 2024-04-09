@@ -54,6 +54,7 @@ steps:
     - git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - git config --global user.name "CI"
     - pip install GitPython
+    - chmod +x ci/askpass.py
     - PLUGIN_TAG=${DRONE_DEPLOY_TO} BRANCH=${DRONE_BRANCH} python3 ci/rebuild-deployment-file.py
 
 - name: build and publish frontend (tag)
