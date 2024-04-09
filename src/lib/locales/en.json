@@ -18,6 +18,12 @@
     "socialmedia": "Social Media",
     "footerText": "All rights reserved."
   },
+  "home": {
+    "title": "Willkommen bei Everbuild",
+    "subtitle": "Wir entwickeln innovative Softwarelösungen",
+    "cta": "Mehr erfahren",
+    "cta2": "Jetzt loslegen!"
+  },
   "about": {
     "title": "ABOUT US",
     "title.main": "We develop things differently",

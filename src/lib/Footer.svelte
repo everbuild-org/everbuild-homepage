@@ -45,13 +45,13 @@
 
 <footer class="flex min-h-[33vh] w-full flex-col justify-between bg-stone-950 p-4" class:mt-6={showMargin}>
     <div class="flex w-full flex-col justify-between lg:flex-row">
-        <div class="prose flex flex-grow flex-col" style="order: 1;">
+        <div class="prose flex flex-grow flex-col flex-wrap" style="order: 1;">
             <h3>{$t("footer.legal")}</h3>
-            <div class="flex gap-2">
+            <div class="flex gap-2 flex-col md:flex-row">
                 <a href="/imprint">{$t("footer.imprint")}</a>
-                <span>&bull;</span>
+                <span class="hidden md:inline">&bull;</span>
                 <a href="/privacy">{$t("footer.privacy")}</a>
-                <span>&bull;</span>
+                <span class="hidden md:inline">&bull;</span>
                 <a href="/terms">{$t("footer.terms")}</a>
             </div>
         </div>

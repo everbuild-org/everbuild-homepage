@@ -1,5 +1,11 @@
 <script>
-import {t} from "$lib/i18n";
+    import {t} from "$lib/i18n";
+    import Wave from "../assets/wave-haikei.svg";
+    import Wave2 from "../assets/wave2-haikei.svg";
+    import Undraw from "../assets/undraw_dev_productivity_re_fylf.svg";
+    import Undraw2 from "../assets/undraw_make_it_rain_re_w9pc.svg";
+    import Coding from "../assets/shahadat-rahman-BfrQnKBulYQ-unsplash.jpg"
+    import RightFrom from "phosphor-svelte/lib/ArrowRight";
 </script>
 
 <svelte:head>
@@ -7,12 +13,51 @@ import {t} from "$lib/i18n";
     <meta name="description" content="Everbuild | Homepage">
 </svelte:head>
 
-<div>
-    <div class="absolute w-screen h-screen">
-
-    </div>
-    <div class="absolute w-screen h-screen">
-
+<div class="h-[calc(100vh-100px)] relative">
+    <img src="{Wave}" class="absolute bottom-0 w-full" alt="wave"/>
+    <div class="absolute inset-0 flex max-w-[100vw]">
+        <div class="flex-1">
+            <div class="flex flex-col justify-center items-center h-full max-w-[100vw]">
+                <h1 class="text-5xl text-white font-bold text-center tracking-tight max-w-[100vw] block break-words">{$t("home.title")}</h1>
+                <p class="text-white text-center max-w-[65ch] my-4">{$t("home.subtitle")}</p>
+                <div class="flex gap-4">
+                    <a href="/about" class="btn btn-primary mt-4">{$t("home.cta")}</a>
+                    <a href="/contact" class="btn btn-outline btn-neutral mt-4">{$t("home.cta2")}
+                        <RightFrom class="w-4 h-4"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="flex-1 flex justify-center">
+            <img src="{Undraw}" class="w-1/2" alt="undraw"/>
+        </div>
     </div>
 </div>
-
+<div class="bg-base-200">
+    <div class="container mx-auto py-16">
+        <div class="text-center tracking-tight font-semibold">{$t("home.abt2.subheader")}</div>
+        <h2 class="text-3xl font-bold text-center">{$t("home.abt2.title")}</h2>
+        <p class="text-center max-w-[65ch] mx-auto mt-4">{$t("home.abt2.subtitle")}</p>
+    </div>
+</div>
+<div class="relative pointer-events-none">
+    <img src="{Wave2}" class="absolute top-0 w-full" alt="wave"/>
+    <div class="pointer-events-auto">
+        <div class="flex flex-wrap justify-center gap-4 pt-8">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src={Coding} alt="Shoes"/>
+                </figure>
+                <div class="card-body">
+                    <h2 class="card-title">{$t("home.abt3.card1.title")}</h2>
+                    <p>{$t("home.abt3.card1.text")}</p>
+                    <div class="card-actions justify-end">
+                        <a href="/contact" class="btn btn-primary">{$t("home.abt3.card1.cta")}</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pt-32 pointer-events-none">
+        <img src={Undraw2} class="w-[300px] mb-[-6.95rem] mx-auto pointer-events-none" alt="undraw"/>
+    </div>
+</div>

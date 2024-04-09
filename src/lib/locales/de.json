@@ -18,6 +18,30 @@
     "socialmedia": "Soziale Medien",
     "footerText": "Alle Rechte vorbehalten."
   },
+  "home": {
+    "title": "Ihr Partner für schnelle und effektive Softwareentwicklung.",
+    "subtitle": "Bei Everbuild verstehen wir, dass Zeit kostbar ist. Deshalb bieten wir Ihnen schnelle und effektive Lösungen für Ihre Softwareentwicklung.",
+    "cta": "Erfahre mehr über uns!",
+    "cta2": "Jetzt loslegen",
+    "abt2": {
+      "title": "Flexibles Team, das Ihre Anforderungen umsetzt.",
+      "subtitle": "Wir sind ein Team aus erfahrenen Designern und Entwicklern, die sich darauf spezialisiert haben, Ihre Anforderungen zu verstehen und umzusetzen. Wir bieten Ihnen maßgeschneiderte Lösungen, die Ihre Erwartungen übertreffen.",
+      "subheader": "LEISTUNGEN"
+    },
+    "abt3": {
+      "card1": {
+        "title": "Auftragsentwicklung",
+        "text": "Wir entwickeln individuelle Softwarelösungen, die auf Ihre Anforderungen zugeschnitten sind. Unsere Mitarbeiter unterstützen Sie von der Konzeption bis zur Umsetzung.",
+        "cta": "Mehr erfahren"
+      },
+      "card2": {
+
+      },
+      "card3": {
+
+      }
+    }
+  },
   "about": {
     "title": "ÜBER UNS",
     "title.main": "Wir gehen anders an Projekte heran",
@@ -38,7 +62,7 @@
     "section": {
       "title": "Ein ambitioniertes Team mit einem gemeinsamen Ziel",
       "subtitle": "UNSERE WERTE",
-        "text": "Unsere Werte sind das Fundament unserer Unternehmenskultur und leiten unser Handeln. Stolz integrieren wir sie in all unsere Projekte."
+      "text": "Unsere Werte sind das Fundament unserer Unternehmenskultur und leiten unser Handeln. Stolz integrieren wir sie in all unsere Projekte."
     },
     "values": {
       "value1": {
