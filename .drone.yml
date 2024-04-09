@@ -6,7 +6,6 @@ steps:
 - name: test
   image: node:21.6.1-bookworm
   commands:
-  - cd asorda-frontend/
   - npm i -g pnpm
   - pnpm i
   - pnpm run build
