@@ -11,7 +11,7 @@ def get_current_semver():
     #./deployment/deployment.yml
     with open("deployment/deployment.yml", "r") as f:
         contents = f.read()
-    match = re.search(r"reg\.everbuild\.org/asorda-frontend:(\d+\.\d+\.\d+)", contents)
+    match = re.search(r"reg\.everbuild\.org/everbuild-homepage:(\d+\.\d+\.\d+)", contents)
     if not match:
         print("Could not find current semver in deployment file!")
         exit(1)
