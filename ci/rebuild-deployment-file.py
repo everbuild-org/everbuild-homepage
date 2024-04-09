@@ -28,7 +28,7 @@ repo.index.commit("chore: Bump version to "+plugin_tag + " [CI SKIP]")
 print("Committed changes to deployment files!")
 
 project_dir = os.path.dirname(os.path.abspath(__file__))
-os.environ['GIT_ASKPASS'] = os.path.join(project_dir, 'ci/askpass.py')
+os.environ['GIT_ASKPASS'] = os.path.join(project_dir, 'askpass.py')
 
 branch = os.getenv("BRANCH")
 
