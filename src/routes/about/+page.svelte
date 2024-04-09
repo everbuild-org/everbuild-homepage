@@ -34,11 +34,11 @@
 
 <div>
     <div class="mt-10 flex justify-center tracking-tight text-sm font-semibold"><p>{$t("about.title")}</p></div>
-    <div class="flex justify-center text-4xl font-bold"><h1>{$t("about.title.main")}</h1></div>
+    <div class="flex justify-center text-4xl font-bold"><h1 class="text-center">{$t("about.title.main")}</h1></div>
     <div class="flex justify-center text-center text-lg font-light px-10 mt-5 max-w-[65ch] mx-auto">
         <p>{$t("about.title.text")}</p>
     </div>
-    <div class="flex justify-center mt-16 gap-6">
+    <div class="flex justify-center mt-16 gap-6 flex-wrap">
         <div class="card w-96 bg-base-100 shadow-xl">
             <figure><img class="h-64 object-cover" src={noted} height="598" width="796" alt="Noted!"/>
             </figure>
@@ -81,13 +81,13 @@
 
     <div class="pt-20 flex justify-center tracking-tight text-sm font-semibold"><p>{$t("about.section.subtitle")}</p>
     </div>
-    <div class="flex justify-center text-3xl font-bold"><h2>{$t("about.section.title")}</h2></div>
+    <div class="flex justify-center text-3xl font-bold"><h2 class="text-center">{$t("about.section.title")}</h2></div>
     <div class="flex justify-center text-center text-lg font-light px-10 mt-5 max-w-[65ch] mx-auto">
         <p>{$t("about.section.text")}</p>
     </div>
 
-    <div class="flex max-w-[1200px] mx-auto w-full gap-6 justify-around mt-20 mb-40">
-        <div class="max-w-[30ch] text-center flex flex-col items-center">
+    <div class="flex max-w-[1200px] mx-auto w-full gap-6 justify-around mt-20 mb-40 flex-wrap">
+        <div class="max-w-[30ch] text-center flex flex-col items-center min-w-64">
             <div class="m-4 p-1 bg-primary bg-opacity-75 rounded-lg">
                 <Flag class="w-12 h-12"/>
             </div>
@@ -96,7 +96,7 @@
                 <p>{$t("about.values.value1.text")}</p>
             </div>
         </div>
-        <div class="max-w-[30ch] text-center flex flex-col items-center">
+        <div class="max-w-[30ch] text-center flex flex-col items-center min-w-64">
             <div class="m-4 p-1 bg-error bg-opacity-75 rounded-lg">
                 <User class="w-12 h-12"/>
             </div>
@@ -105,7 +105,7 @@
                 <p>{$t("about.values.value2.text")}</p>
             </div>
         </div>
-        <div class="max-w-[30ch] text-center flex flex-col items-center">
+        <div class="max-w-[30ch] text-center flex flex-col items-center min-w-64">
             <div class="m-4 p-1 bg-info bg-opacity-75 rounded-lg">
                 <CompassTool class="w-12 h-12"/>
             </div>
