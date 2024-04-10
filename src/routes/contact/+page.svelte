@@ -12,12 +12,12 @@
 
 <div class="flex min-h-[calc(100vh-100px)] flex-wrap">
     <div class="flex justify-center items-center flex-[3] flex-wrap">
-        <div class="p-20 flex-1 pb-40">
+        <div class="pt-20 px-2 md:py-20 flex-1 pb-40">
             <h1 class="text-5xl tracking-tight font-bold text-white">{$t("contact.text.title")}</h1>
             <p class="max-w-[35ch] pt-8 pb-4">{$t("contact.text.text")}</p>
             <p class="leading-loose pb-16"><a href="mailto:contact@everbuild.org">contact@everbuild.org</a><br>
                 <a href="https://everbuild.asorda.app" target="_blank">{$t("contact.text.subtitle")}</a></p>
-            <div class="w-full justify-between flex gap-4">
+            <div class="w-full justify-between flex gap-4 flex-wrap">
                 <div class="">
                     <h2 class="text-2xl font-bold text-white">{$t("contact.text.text1.title")}</h2>
                     <p class="max-w-[35ch]">{$t("contact.text.text1.text")}</p>
@@ -34,7 +34,7 @@
         </div>
     </div>
     <div class="flex-[2] flex justify-center items-center">
-        <div class="card w-full mx-16 bg-neutral shadow-xl">
+        <div class="card w-full md:mx-16 bg-neutral shadow-xl max-w-[calc(100vw-50px)]">
             <form method="POST" class="card-body">
                 <h2 class="text-2xl font-bold">{$t("contact.form.title")}</h2>
                 {#if form?.formError}
