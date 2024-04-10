@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: homepage
-        image: reg.everbuild.org/everbuild-homepage:0.1.2
+        image: reg.everbuild.org/everbuild-homepage:0.2.0
         imagePullPolicy: Always
         resources:
           limits:
