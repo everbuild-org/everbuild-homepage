@@ -12,7 +12,7 @@
 
 <div class="flex min-h-[calc(100vh-100px)] flex-wrap">
     <div class="flex justify-center items-center flex-[3] flex-wrap">
-        <div class="pt-20 px-2 md:py-20 flex-1 pb-40">
+        <div class="pt-20 px-2 md:px-20 flex-1 pb-40">
             <h1 class="text-5xl tracking-tight font-bold text-white">{$t("contact.text.title")}</h1>
             <p class="max-w-[35ch] pt-8 pb-4">{$t("contact.text.text")}</p>
             <p class="leading-loose pb-16"><a href="mailto:contact@everbuild.org">contact@everbuild.org</a><br>
