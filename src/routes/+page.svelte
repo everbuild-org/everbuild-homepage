@@ -30,7 +30,7 @@
                 </div>
             </div>
         </div>
-        <div class="flex-1 flex justify-center">
+        <div class="flex-1 hidden md:flex justify-center">
             <img src="{Undraw}" class="w-1/2" alt="undraw"/>
         </div>
     </div>

@@ -5,12 +5,18 @@ name: prod
 steps:
 - name: test
   image: node:21.6.1-bookworm
+  environment:
+    WEBHOOK_URL:
+      from_secret: WEBHOOK
   commands:
   - npm i -g pnpm
   - pnpm i
   - pnpm run build
 
 - name: build and publish (dev)
+  environment:
+    WEBHOOK_URL:
+      from_secret: WEBHOOK
   image: plugins/docker
   depends_on:
     - "test"

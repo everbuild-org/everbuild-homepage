@@ -4,6 +4,7 @@
   "head.title.privacy": "Everbuild | Datenschutz",
   "head.title.terms": "Everbuild | Nutzungsbedingungen",
   "head.title.about": "Everbuild | Über uns",
+  "head.title.contact": "Everbuild | Kontakt",
   "nav": {
     "home": "Startseite",
     "about": "Über uns",
@@ -81,6 +82,31 @@
         "title": "Tue das Unmögliche",
         "text": "Lass dich von schwierigen Problemen inspirieren. Schwelge in Unbekanntem. Frage \"Warum?\", aber frage auch immer \"Warum nicht?\"."
       }
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "Kontaktiere uns",
+      "name": "Name",
+      "email": "E-Mail",
+      "phone": "Telefonnummer",
+      "message": "Nachricht",
+      "submit": "Absenden",
+      "policy1": "Indem du uns kontaktierst, stimmst du unseren",
+      "policy2": "Datenschutzbestimmungen",
+      "policy3": "und",
+      "policy4": "zu."
+    },
+    "text": {
+      "title": "Kontaktiere uns",
+      "text": "E-Mail, Discord, Teamspeak oder fülle das Formular aus, um uns zu kontaktieren.",
+      "subtitle": "Kundenbetreuung",
+      "text1.title": "Kundenbetreuung",
+      "text1.text": "Unser Support-Team steht dir rund um die Uhr zur Verfügung, wenn du Fragen oder Probleme hast.",
+      "text2.title": "Feedback und Vorschläge",
+      "text2.text": "Wir schätzen dein Feedback und arbeiten kontinuierlich daran, Everbuild zu verbessern. Dein Beitrag ist entscheidend für die Gestaltung der Zukunft von Everbuild.",
+      "text3.title": "Medienanfragen",
+      "text3.text": "Für medienbezogene Fragen oder Presseanfragen kontaktiere uns bitte unter media@everbuild.org"
     }
   }
 }

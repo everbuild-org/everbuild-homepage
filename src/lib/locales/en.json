@@ -4,6 +4,7 @@
   "head.title.privacy": "Everbuild | Privacy",
   "head.title.terms": "Everbuild | Terms",
   "head.title.about": "Everbuild | About Us",
+  "head.title.contact": "Everbuild | Contact",
   "nav": {
     "home": "Home",
     "about": "About",
@@ -81,6 +82,31 @@
         "title": "Do the impossible",
         "text": "Be energized by difficult problems. Revel in unknowns. Ask \"Why?\", but always question, \"Why not?\""
       }
+    }
+  },
+  "contact": {
+    "form": {
+      "title": "Contact us",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone number",
+      "message": "Message",
+      "submit": "Send",
+      "policy1": "By contacting us, you agree to our",
+      "policy2": "Privacy Policy",
+      "policy3": "and",
+      "policy4": "agree."
+    },
+    "text": {
+      "title": "Contact us",
+      "text": "Email, Discord, Teamspeak or fill out the form to contact us.",
+      "subtitle": "Customer support",
+      "text1.title": "Customer support",
+      "text1.text": "Our support team is available around the clock if you have any questions or problems.",
+      "text2.title": "Feedback and suggestions",
+      "text2.text": "We value your feedback and are constantly working to improve Everbuild. Your input is critical to shaping the future of Everbuild.",
+      "text3.title": "Media requests",
+      "text3.text": "For media-related questions or press inquiries, please contact us at media@everbuild.org"
     }
   }
 }
