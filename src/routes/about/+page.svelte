@@ -39,14 +39,14 @@
         <p>{$t("about.title.text")}</p>
     </div>
     <div class="flex justify-center mt-16 gap-6 flex-wrap">
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-96 bg-base-200 shadow-xl">
             <figure><img class="h-64 object-cover" src={noted} height="598" width="796" alt="Noted!"/>
             </figure>
             <div class="card-body">
                 <h2 class="card-title">
                     Noted!
                 </h2>
-                <p>{$t("about.card1.text")}</p>
+                <p class="leading-relaxed">{$t("about.card1.text")}</p>
                 <div class="card-actions justify-end">
                     <div class="badge badge-info">Open Source</div>
                     <div class="badge badge-primary">{$t("about.card.badges.services")}</div>
@@ -54,27 +54,27 @@
                 </div>
             </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-96 bg-base-200 shadow-xl">
             <figure><img class="h-64 object-cover" src={asorda} height="951" width="1900" alt="Asorda"/>
             </figure>
             <div class="card-body">
                 <h2 class="card-title">
                     Asorda
                 </h2>
-                <p>{$t("about.card2.text")}</p>
+                <p class="leading-relaxed">{$t("about.card2.text")}</p>
                 <div class="card-actions justify-end">
                     <div class="badge badge-primary">{$t("about.card.badges.services")}</div>
                     <div class="badge badge-success">{$t("about.card.badges.products")}</div>
                 </div>
             </div>
         </div>
-        <div class="card w-96 bg-base-100 shadow-xl">
+        <div class="card w-96 bg-base-200 shadow-xl">
             <figure><img class="h-64 object-cover" src={chooseImage()} height="951" width="1900" alt="Asorda"/></figure>
             <div class="card-body">
                 <h2 class="card-title">
                     {$t("about.card3.title")}
                 </h2>
-                <p>{$t("about.card3.text")}</p>
+                <p class="leading-relaxed">{$t("about.card3.text")}</p>
             </div>
         </div>
     </div>
@@ -92,7 +92,7 @@
                 <Flag class="w-12 h-12"/>
             </div>
             <div>
-                <h3 class="text-2xl font-bold tracking-tight">{$t("about.values.value1.title")}</h3>
+                <h3 class="text-2xl font-bold tracking-tighter">{$t("about.values.value1.title")}</h3>
                 <p>{$t("about.values.value1.text")}</p>
             </div>
         </div>
