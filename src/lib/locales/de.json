@@ -35,10 +35,14 @@
         "cta": "Mehr erfahren"
       },
       "card2": {
-
+        "title": "Managed Infrastruktur",
+        "text": "Wir bieten Ihnen eine sichere und zuverlässige Infrastruktur, die Ihre Anwendungen unterstützt. Unsere Experten kümmern sich um die Wartung und den Betrieb Ihrer Systeme.",
+        "cta": "Mehr erfahren"
       },
       "card3": {
-
+        "title": "Software-as-a-Service",
+        "text": "Wir vermarkten unsere eigenen Produkte nach einem Software-as-a-Service-Modell. Durch unsere Free-Tiers kannst Du außerdem schnell ein Gefühl dafür bekommen, wofür Du bezahlst - ganz ohne eigene Rechenleistung.",
+        "cta": "Mehr erfahren"
       }
     }
   },

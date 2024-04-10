@@ -19,10 +19,32 @@
     "footerText": "All rights reserved."
   },
   "home": {
-    "title": "Willkommen bei Everbuild",
-    "subtitle": "Wir entwickeln innovative Softwarelösungen",
-    "cta": "Mehr erfahren",
-    "cta2": "Jetzt loslegen!"
+    "title": "Your partner for fast and effective software development.",
+    "subtitle": "At Everbuild, we understand that time is precious. That's why we offer you fast and effective solutions for your software development.",
+    "cta": "Learn more about us!",
+    "cta2": "Get started now",
+    "abt2": {
+      "title": "Flexible team that implements your requirements.",
+      "subtitle": "We are a team of experienced designers and developers who specialize in understanding and implementing your requirements. We offer customized solutions that exceed your expectations.",
+      "subheader": "SERVICES"
+    },
+    "abt3": {
+      "card1": {
+        "title": "Custom development",
+        "text": "We develop individual software solutions that are tailored to your requirements. Our employees support you from conception to implementation.",
+        "cta": "Learn more"
+      },
+      "card2": {
+        "title": "Managed infrastructure",
+        "text": "We offer you a secure and reliable infrastructure that supports your applications. Our experts take care of the maintenance and operation of your systems.",
+        "cta": "Learn more"
+      },
+      "card3": {
+        "title": "Software-as-a-Service",
+        "text": "We market our own products according to a Software-as-a-Service model. With our free tiers, you can also quickly get a feel for what you're paying for - without any computing power of your own.",
+        "cta": "Learn more"
+      }
+    }
   },
   "about": {
     "title": "ABOUT US",

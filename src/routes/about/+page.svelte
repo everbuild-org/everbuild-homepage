@@ -39,7 +39,7 @@
         <p>{$t("about.title.text")}</p>
     </div>
     <div class="flex justify-center mt-16 gap-6 flex-wrap">
-        <div class="card w-96 bg-base-200 shadow-xl">
+        <div class="card w-96 bg-neutral shadow-xl">
             <figure><img class="h-64 object-cover" src={noted} height="598" width="796" alt="Noted!"/>
             </figure>
             <div class="card-body">
@@ -54,7 +54,7 @@
                 </div>
             </div>
         </div>
-        <div class="card w-96 bg-base-200 shadow-xl">
+        <div class="card w-96 bg-neutral shadow-xl">
             <figure><img class="h-64 object-cover" src={asorda} height="951" width="1900" alt="Asorda"/>
             </figure>
             <div class="card-body">
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-        <div class="card w-96 bg-base-200 shadow-xl">
+        <div class="card w-96 bg-neutral shadow-xl">
             <figure><img class="h-64 object-cover" src={chooseImage()} height="951" width="1900" alt="Asorda"/></figure>
             <div class="card-body">
                 <h2 class="card-title">
