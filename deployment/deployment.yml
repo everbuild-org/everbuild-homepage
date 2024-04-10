@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: homepage
-        image: reg.everbuild.org/everbuild-homepage:0.2.0
+        image: reg.everbuild.org/everbuild-homepage:1.0.0
         imagePullPolicy: Always
         env:
           - name: WEBHOOK_URL
