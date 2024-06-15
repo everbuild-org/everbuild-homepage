@@ -13,4 +13,4 @@ steps:
       from_secret: regcred
     tags.auto: true
     dockerfile: Dockerfile
-    auto-label: true
+    labels: 1.0.1
