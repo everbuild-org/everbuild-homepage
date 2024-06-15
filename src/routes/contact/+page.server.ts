@@ -1,5 +1,6 @@
 import type {Actions} from './$types';
 import {env} from "$env/dynamic/private";
+import {building} from "$app/environment";
 
 export const actions = {
     default: async (event) => {
@@ -13,33 +14,35 @@ export const actions = {
                 formError: 'Please fill in all fields'
             }
         }
-        const webhook = env.WEBHOOK_URL;
-        const payload = {
-            "username": "Everbuild Website",
-            "avatar_url": "",
-            "content": null,
-            "embeds": [
-                {
-                    "title": name,
-                    "description": text,
-                    "color": 2733589,
-                    "author": {
-                        "name": email  + " | " + phone
-                    },
-                    "footer": {
-                        "text": "Sent from contact form on the everbuild homepage"
+        if (!building) {
+            const webhook = env.WEBHOOK_URL!;
+            const payload = {
+                "username": "Everbuild Website",
+                "avatar_url": "",
+                "content": null,
+                "embeds": [
+                    {
+                        "title": name,
+                        "description": text,
+                        "color": 2733589,
+                        "author": {
+                            "name": email + " | " + phone
+                        },
+                        "footer": {
+                            "text": "Sent from contact form on the everbuild homepage"
+                        }
                     }
-                }
-            ],
-            "attachments": []
+                ],
+                "attachments": []
+            }
+            await fetch(webhook, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
+            });
         }
-        await fetch(webhook, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload)
-        });
         return {
             formSuccess: 'Your message has been sent'
         }

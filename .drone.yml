@@ -3,79 +3,14 @@ type: docker
 name: prod
 
 steps:
-- name: test
-  image: node:21.6.1-bookworm
-  environment:
-    WEBHOOK_URL:
-      from_secret: WEBHOOK
-  commands:
-  - npm i -g pnpm
-  - pnpm i
-  - pnpm run build
-
-- name: build and publish (dev)
-  environment:
-    WEBHOOK_URL:
-      from_secret: WEBHOOK
+- name: build and publish
   image: plugins/docker
-  depends_on:
-    - "test"
-  when:
-    event:
-      exclude:
-        - promote
   settings:
-    repo: reg.everbuild.org/everbuild-homepage
-    registry: reg.everbuild.org
-    username: admin
+    repo: harbor.everbuild.org/private/everbuild-homepage
+    registry: harbor.everbuild.org/private
+    username: robot$continous-integration
     password: 
       from_secret: regcred
     tags.auto: true
     dockerfile: Dockerfile
     auto-label: true
-
-- name: check required config
-  image: python:3-bullseye
-  when:
-    event:
-      - promote
-  commands:
-    - PLUGIN_TAG=${DRONE_DEPLOY_TO} BRANCH=${DRONE_BRANCH} python3 ci/check_deploy.py
-
-- name: update required config
-  image: python:3-bullseye
-  depends_on:
-    - "check required config"
-    - "test"
-  when:
-    event:
-      - promote
-  environment:
-    GIT_USERNAME:
-      from_secret: GIT_USERNAME
-    GIT_PASSWORD:
-      from_secret: GIT_PASSWORD
-  commands:
-    - apt-get update && apt-get install git
-    - git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-    - git config --global user.name "CI"
-    - pip install GitPython
-    - chmod +x ci/askpass.py
-    - PLUGIN_TAG=${DRONE_DEPLOY_TO} BRANCH=${DRONE_BRANCH} python3 ci/rebuild-deployment-file.py
-
-- name: build and publish frontend (tag)
-  image: plugins/docker
-  depends_on:
-    - "update required config"
-  when:
-    event:
-      - promote
-  settings:
-    repo: reg.everbuild.org/everbuild-homepage
-    registry: reg.everbuild.org
-    username: admin
-    password: 
-      from_secret: regcred
-    dockerfile: Dockerfile
-    auto-label: true
-    tag: ${DRONE_DEPLOY_TO}
