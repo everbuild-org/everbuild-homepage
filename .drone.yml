@@ -11,6 +11,6 @@ steps:
     username: robot$continous-integration
     password: 
       from_secret: regcred
-    tags.auto: true
     dockerfile: Dockerfile
-    labels: 1.0.1
+    tags:
+      - 1.0.1
