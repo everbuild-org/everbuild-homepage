@@ -17,5 +17,8 @@ steps:
     password: 
       from_secret: regcred
     dockerfile: Dockerfile
+    build_args_from_env:
+      - PUBLIC_CF_TURNSTILE_KEY
+      - CF_TURNSTILE_SECRET
     tags:
       - 1.1.0
