@@ -1,6 +1,8 @@
 <script lang="ts">
     import type {ActionData} from './$types'
     import {t} from "$lib/i18n";
+    import {Turnstile} from "svelte-turnstile";
+    import {PUBLIC_CF_TURNSTILE_KEY} from "$env/static/public";
 
     export let form: ActionData;
 </script>
@@ -56,6 +58,7 @@
                     <input type="text" class="grow border-0" placeholder="+49 ..." name="phone"/>
                 </label>
                 <textarea class="textarea textarea-bordered min-h-64" placeholder={$t("contact.form.message")} name="text"></textarea>
+                <Turnstile siteKey={PUBLIC_CF_TURNSTILE_KEY} />
                 <div class="card-actions justify-center flex-col">
                     <button class="btn btn-primary flex-1 w-full">{$t("contact.form.submit")}</button>
                     <span class="text-sm text-center block w-full">
