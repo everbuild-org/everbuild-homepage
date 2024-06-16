@@ -6,7 +6,7 @@ steps:
 - name: build and publish
   image: plugins/docker
   environment:
-    CF_TURNSTILE_KEY:
+    PUBLIC_CF_TURNSTILE_KEY:
       from_secret: CF_TURNSTILE_KEY
     CF_TURNSTILE_SECRET:
       from_secret: CF_TURNSTILE_SECRET
