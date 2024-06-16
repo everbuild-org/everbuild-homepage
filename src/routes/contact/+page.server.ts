@@ -1,7 +1,6 @@
 import type {Actions} from './$types';
 import {env} from "$env/dynamic/private";
 import {building} from "$app/environment";
-import {CF_TURNSTILE_SECRET} from "$env/static/private";
 
 interface TokenValidateResponse {
     'error-codes': string[];
@@ -47,7 +46,7 @@ export const actions = {
         const phone = formData.get('phone');
         const text = formData.get('text');
         const token = formData.get('cf-turnstile-response') as string | null;
-        if (!await validateToken(token, CF_TURNSTILE_SECRET)) {
+        if (!await validateToken(token, env.CF_TURNSTILE_SECRET)) {
             return {
                 formError: 'Please fill in all fields'
             }

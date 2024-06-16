@@ -6,6 +6,10 @@ COPY pnpm-lock.yaml pnpm-lock.yaml
 RUN pnpm i
 COPY . .
 RUN pnpm run sync
+
+# build arg PUBLIC_CF_TURNSTILE_KEY to environment variable CF_TURNSTILE_KEY
+ARG PUBLIC_CF_TURNSTILE_KEY
+ENV CF_TURNSTILE_KEY=$PUBLIC_CF_TURNSTILE_KEY
 RUN pnpm run build
 
 FROM node:21-alpine3.19 as runner
