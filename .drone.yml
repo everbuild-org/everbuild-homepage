@@ -18,4 +18,4 @@ steps:
       from_secret: regcred
     dockerfile: Dockerfile
     tags:
-      - 1.0.1
+      - 1.1.0
