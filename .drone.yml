@@ -18,4 +18,4 @@ steps:
     build_args_from_env:
       - PUBLIC_CF_TURNSTILE_KEY
     tags:
-      - 1.1.0
+      - 1.1.1
