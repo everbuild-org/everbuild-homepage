@@ -3,6 +3,7 @@
     import {t} from "$lib/i18n";
     import {Turnstile} from "svelte-turnstile";
     import {PUBLIC_CF_TURNSTILE_KEY} from "$env/static/public";
+    import { Warning } from "phosphor-svelte";
 
     export let form: ActionData;
 </script>
@@ -15,8 +16,15 @@
 <div class="flex min-h-[calc(100vh-100px)] flex-wrap">
     <div class="flex justify-center items-center flex-[3] flex-wrap">
         <div class="pt-20 px-2 md:px-20 flex-1 pb-40">
-            <h1 class="text-5xl tracking-tight font-bold dark:text-white">{$t("contact.text.title")}</h1>
-            <p class="max-w-[35ch] pt-8 pb-4">{$t("contact.text.text")}</p>
+            <h1 class="text-5xl tracking-tight pb-4 font-bold dark:text-white">{$t("contact.text.title")}</h1>
+
+            <div class="alert shadow-lg border-1 border-dashed border-warning alert-dash mb-6">
+                <Warning size={20} />
+                <span><strong>Notice:</strong> We are <b>not affiliated</b> with any <b>glue company or adhesive manufacturer</b>. This is a group of independent software engineers. If you need help with the glue, please contact Sika UK <a href="https://gbr.sika.com/en/distribution/who-we-are/contact-us/send-us-an-enquiry.html" class="underline">here</a> </span>
+            </div>
+
+            <p class="max-w-[35ch] pt-2 pb-4">{$t("contact.text.text")}</p>
+
             <p class="leading-loose pb-16"><a href="mailto:contact@everbuild.org">contact@everbuild.org</a><br>
                 <a href="https://everbuild.asorda.app" target="_blank">{$t("contact.text.subtitle")}</a></p>
             <div class="w-full justify-between flex gap-4 flex-wrap">
