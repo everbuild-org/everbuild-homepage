@@ -85,6 +85,16 @@
     }
   },
   "contact": {
+    "notice": {
+      "title": "Notice:",
+      "text1": "We are",
+      "text2": "not affiliated",
+      "text3": "with any",
+      "text4": "glue company or adhesive manufacturer",
+      "text5": ". This is a group of independent software engineers. If you need help with the glue, please contact Sika UK",
+      "text6": "here",
+      "text7": "If it's really us you're after, a group of independent software engineers from Germany, chat with us via"
+    },
     "form": {
       "title": "Contact us",
       "name": "Name",
@@ -92,10 +102,16 @@
       "phone": "Phone number",
       "message": "Message",
       "submit": "Send",
+      "placeholder": {
+        "name": "Name",
+        "email": "hi@everbuild.org",
+        "phone": "+49 ..."
+      },
       "policy1": "By contacting us, you agree to our",
       "policy2": "Privacy Policy",
       "policy3": "and",
-      "policy4": "agree."
+      "policy4": "agree.",
+      "terms": "AGBs"
     },
     "text": {
       "title": "Contact us",

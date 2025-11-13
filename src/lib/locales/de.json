@@ -85,6 +85,16 @@
     }
   },
   "contact": {
+    "notice": {
+      "title": "Hinweis:",
+      "text1": "Wir sind",
+      "text2": "nicht verbunden",
+      "text3": "mit irgendeinem",
+      "text4": "Klebstoffhersteller oder Klebstoffunternehmen",
+      "text5": ". Dies ist eine Gruppe unabhängiger Softwareentwickler. Wenn du Hilfe mit dem Kleber benötigst, kontaktiere bitte Sika UK",
+      "text6": "hier",
+      "text7": "Wenn du wirklich uns suchst, eine Gruppe unabhängiger Softwareentwickler aus Deutschland, chatte mit uns über"
+    },
     "form": {
       "title": "Kontaktiere uns",
       "name": "Name",
@@ -92,10 +102,16 @@
       "phone": "Telefonnummer",
       "message": "Nachricht",
       "submit": "Absenden",
+      "placeholder": {
+        "name": "Name",
+        "email": "hi@everbuild.org",
+        "phone": "+49 ..."
+      },
       "policy1": "Indem du uns kontaktierst, stimmst du unseren",
       "policy2": "Datenschutzbestimmungen",
       "policy3": "und",
-      "policy4": "zu."
+      "policy4": "zu.",
+      "terms": "AGBs"
     },
     "text": {
       "title": "Kontaktiere uns",
