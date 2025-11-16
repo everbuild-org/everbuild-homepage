@@ -27,7 +27,7 @@ const variantClass = variant === "primary" ? "bg-lime-500 text-black" : "bg-blac
         {description}
     </p>
     <div class="flex flex-wrap gap-2 mb-6">
-        {tags.map((tag) =>
+        {(tags || []).map((tag) =>
                 <span class="bg-gray-200 text-black font-mono text-xs font-bold px-2 py-1 rounded border-2 border-black dark:bg-neutral-700 dark:text-neutral-200 dark:border-neutral-600">{tag}</span>
         )}
     </div>
