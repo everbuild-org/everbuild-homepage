@@ -1,0 +1,66 @@
+---
+import BaseOf from '../layouts/BaseOf.astro';
+import Marquee from "../components/Marquee.astro";
+import Hero from "./index/Hero.astro";
+import Project from "./index/Project.astro";
+---
+
+<BaseOf>
+    <Marquee/>
+
+    <main class="w-container py-4 md:py-8">
+        <Hero/>
+
+        <section id="projects" class="mb-16">
+            <h3 class="text-3xl font-extrabold uppercase mb-8">Current Projects</h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <Project
+                        title="Asorda.net"
+                        description="A Minecraft server built with cutting-edge tech to provide a unique and stable multiplayer experience."
+                        tags={["Minecraft", "Minestom", "Gaming"]}
+                        buttonText="Visit Server"
+                        buttonLink="https://asorda.net"
+                        buttonVariant="primary"
+                />
+
+                <Project
+                        title="Noted"
+                        description="An open-source, GPU-accelerated note-taking tool that works beautifully with Markdown. Blazing fast, minimal, and powerful."
+                        tags={["Open Source", "Productivity", "GPU", "Markdown"]}
+                        buttonText="View on GitHub"
+                        buttonLink="https://github.com/everbuild-org/noted"
+                />
+
+                <Project
+                        title="Blocks and stuff"
+                        description="An open-source library for Minestom developers, meticulously recreating vanilla Minecraft behavior for blocks and entities."
+                        tags={["Open Source", "Minestom", "Library", "Minecraft"]}
+                        buttonText="View on GitHub"
+                        buttonLink="https://github.com/everbuild-org/blocks-and-stuff"
+                />
+            </div>
+        </section>
+
+        <section id="about" class="mb-16">
+            <div class="bg-black text-white border-4 border-black rounded-lg p-8 md:p-12 hard-shadow dark:bg-neutral-800 dark:border-neutral-700">
+                <h3 class="text-3xl font-extrabold uppercase mb-6 text-lime-500">About Us</h3>
+                <p class="text-lg md:text-xl max-w-3xl mb-4">
+                    We are a german collective of passionate developers, believe in the power of open-source
+                    and building software that is both functional and beautifully engineered.
+                </p>
+                <div class="border-l-4 border-lime-500 flex flex-col">
+                    <p class="text-lg md:text-xl max-w-3xl ml-3">
+                        “We love to explore” - We think, this quote fits us well. We’re constantly exploring new ways to
+                        realize the impossible, whatever it may be. Our projects are filled to the brim with technological
+                        marvels and never-seen-before approaches. But we’re also constantly exploring new ways for enhancing
+                        the team cohesion and collaboration. This is what Everbuild is all about.
+                    </p>
+                    <cite class="text-sm font-bold ml-3 my-3">- Nico W., Team Director</cite>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+</BaseOf>
