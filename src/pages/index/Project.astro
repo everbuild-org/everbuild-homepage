@@ -1,0 +1,38 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    tags: string[];
+    buttonText: string;
+    buttonLink: string;
+    buttonVariant?: "primary" | "secondary";
+}
+
+const {
+    title,
+    description,
+    tags,
+    buttonText,
+    buttonLink,
+    buttonVariant
+} = Astro.props;
+
+const variant = buttonVariant || "secondary";
+const variantClass = variant === "primary" ? "bg-lime-500 text-black" : "bg-black text-white dark:bg-white dark:text-black dark:border-neutral-900";
+---
+
+<div class="bg-white border-4 border-black rounded-lg p-6 hard-shadow card-hover transition-all duration-150 flex flex-col h-full dark:bg-neutral-900 dark:border-neutral-700">
+    <h4 class="text-3xl font-bold font-mono mb-3">{title}</h4>
+    <p class="text-base text-gray-700 dark:text-neutral-300 mb-4 flex-grow">
+        {description}
+    </p>
+    <div class="flex flex-wrap gap-2 mb-6">
+        {(tags || []).map((tag) =>
+                <span class="bg-gray-200 text-black font-mono text-xs font-bold px-2 py-1 rounded border-2 border-black dark:bg-neutral-700 dark:text-neutral-200 dark:border-neutral-600">{tag}</span>
+        )}
+    </div>
+    <a href={buttonLink}
+       class={"mt-auto font-bold text-lg text-center p-3 rounded-lg border-4 border-black hard-shadow btn-hover transition-all duration-150 uppercase " + variantClass}>
+        {buttonText}
+    </a>
+</div>

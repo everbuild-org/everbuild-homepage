@@ -1,0 +1,64 @@
+<footer id="contact" class="border-t-4 border-black bg-white p-8 dark:bg-neutral-900 dark:border-neutral-700">
+    <div class="w-container grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+            <h5 class="text-xl font-extrabold uppercase mb-2">Everbuild.org</h5>
+            <p class="text-base text-gray-700 dark:text-neutral-400">Developer Collective</p>
+            <p class="text-base text-gray-700 dark:text-neutral-400">from Germany</p>
+        </div>
+        <div>
+            <h5 class="text-xl font-extrabold uppercase mb-2">Connect</h5>
+            <ul class="flex flex-col space-y-2">
+                <li><a target="_blank" href="https://github.com/everbuild-org" class="font-bold hover:bg-lime-500 p-1 dark:text-neutral-200 dark:hover:text-black">GitHub</a></li>
+                <li><a target="_blank" href="https://discord.com/invite/aK8KD2VVhH" class="font-bold hover:bg-lime-500 p-1 dark:text-neutral-200 dark:hover:text-black">Discord</a></li>
+                <li><button id="email-us-button" class="font-bold cursor-pointer hover:bg-lime-500 p-1 dark:text-neutral-200 dark:hover:text-black">Email Us</button></li>
+            </ul>
+        </div>
+        <div>
+            <h5 class="text-xl font-extrabold uppercase mb-2">Legal</h5>
+            <ul class="flex flex-col space-y-2">
+                <li><a href="/imprint" class="font-bold hover:bg-lime-500 p-1 dark:text-neutral-200 dark:hover:text-black">Imprint</a></li>
+                <li><a href="/privacy" class="font-bold hover:bg-lime-500 p-1 dark:text-neutral-200 dark:hover:text-black">Privacy Policy</a></li>
+                <li><a href="/terms" class="font-bold hover:bg-lime-500 p-1 dark:text-neutral-200 dark:hover:text-black">Terms</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="text-center mt-8 pt-8 border-t-2 border-gray-300 dark:border-neutral-700">
+        <p class="font-mono text-sm dark:text-neutral-400">&copy; {new Date().getFullYear()} Everbuild.org. <span title="All rights reserved.">All blocks reserved.</span></p>
+    </div>
+</footer>
+
+<dialog id="mail-us-dialog" class="bg-white border-4 border-black rounded-lg hard-shadow dark:bg-neutral-900 dark:border-neutral-700 w-11/12 max-w-lg mx-auto my-auto">
+    <div class="p-6 relative">
+        <button id="close-dialog-btn" class="absolute top-4 right-4 bg-black text-white dark:bg-white dark:text-black w-8 h-8 rounded-lg border-4 border-black dark:border-white font-mono font-bold text-lg btn-hover transition-all duration-150">
+            X
+        </button>
+
+        <h4 class="text-2xl font-extrabold uppercase mb-4 text-lime-500">Email us</h4>
+
+        <div class="space-y-4 text-base text-gray-700 dark:text-neutral-300">
+            <p>
+                We are <span class="font-mono bg-black text-white dark:bg-white dark:text-black">not affiliated</span> with any <span class="font-mono bg-black text-white dark:bg-white dark:text-black">glue company or adhesive manufacturer</span>. This is a group of independent software engineers.
+            </p>
+            <p>
+                If you need help with the glue, please contact Sika
+                UK <a href="https://gbr.sika.com/en/distribution/who-we-are/contact-us/send-us-an-enquiry.html" target="_blank" rel="noopener noreferrer" class="font-bold underline hover:bg-lime-500 p-1 dark:hover:text-black">here</a>
+            </p>
+            <p>
+                If it's really us you're after, a group of independent software engineers from Germany, chat with us via
+                <a href="mailto:hi@everbuild.org" class="font-bold underline hover:bg-lime-500 p-1 dark:hover:text-black">hi@everbuild.org</a>
+            </p>
+        </div>
+    </div>
+</dialog>
+
+<script>
+    const emailUsButton = document.getElementById("email-us-button")!;
+    const mailUsDialog = document.getElementById("mail-us-dialog")! as HTMLDialogElement;
+    const closeDialogBtn = document.getElementById("close-dialog-btn")!;
+    emailUsButton.addEventListener("click", (_) => mailUsDialog.showModal())
+    closeDialogBtn.addEventListener("click", (_) => mailUsDialog.close())
+</script>
+
+
+
+

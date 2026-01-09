@@ -1,0 +1,110 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+body {
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body, html {
+    scroll-behavior: smooth;
+}
+
+.marquee-wrapper {
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+}
+
+.animate-marquee span {
+    display: inline-block;
+    padding-right: 2rem;
+}
+
+.hard-shadow {
+    box-shadow: 6px 6px 0 #000;
+}
+
+.card-hover:hover {
+    box-shadow: 2px 2px 0 #000;
+    transform: translate(4px, 4px);
+}
+
+.btn-hover:hover {
+    box-shadow: 2px 2px 0 #000;
+    transform: translate(2px, 2px);
+}
+
+@media (prefers-color-scheme: dark) {
+    .hard-shadow {
+        box-shadow: 6px 6px 0 var(--color-lime-500);
+    }
+
+    .card-hover:hover {
+        box-shadow: 2px 2px 0 var(--color-lime-500);
+        transform: translate(4px, 4px);
+    }
+
+    .btn-hover:hover {
+        box-shadow: 2px 2px 0 var(--color-lime-500);
+        transform: translate(2px, 2px);
+    }
+}
+
+.w-container {
+    @apply container mx-auto px-4 md:px-8;
+}
+
+dialog {
+    padding: 0;
+}
+
+dialog::backdrop {
+    background-color: rgba(0.4, 0.4, 0.4, 0.6);
+}
+
+.lang-content {
+    display: none;
+}
+.lang-content.active {
+    display: block;
+}
+
+.section-content h2 {
+    @apply text-2xl font-extrabold uppercase mb-4 text-lime-500;
+}
+.section-content h3 {
+    @apply text-xl font-bold uppercase mt-6 mb-2;
+}
+.section-content p, .section-content ul {
+    @apply text-base text-gray-700 dark:text-neutral-300 mb-4;
+}
+.section-content ul {
+    @apply list-disc list-inside;
+}
+.section-content a {
+    @apply font-bold underline hover:bg-lime-500 dark:hover:text-black;
+}
+
+.btn-grp-active {
+    @apply bg-lime-500 text-black;
+}
+
+.btn-grp-inactive {
+    @apply bg-black text-white dark:bg-white dark:text-black dark:border-neutral-900;
+}
