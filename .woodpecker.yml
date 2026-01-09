@@ -1,0 +1,18 @@
+when:
+  event:
+    - push
+  branch:
+    - main
+
+steps:
+  - name: publish
+    image: woodpeckerci/plugin-kaniko
+    settings:
+      registry: harbor.everbuild.org
+      repo: private/everbuild-homepage
+      tags: 2.0.3
+      cache: true
+      username:
+        from_secret: registry_username
+      password:
+        from_secret: registry_password
