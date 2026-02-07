@@ -10,7 +10,7 @@ steps:
     settings:
       registry: harbor.everbuild.org
       repo: private/everbuild-homepage
-      tags: 2.0.3
+      tags: 2.0.4
       cache: true
       username:
         from_secret: registry_username
